@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/38832166/how-to-create-a-mysql-db-with-laravel
