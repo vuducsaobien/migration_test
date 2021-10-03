@@ -21,7 +21,7 @@ class Teacher extends Migration
             $table->string('email')->unique();
             $table->string('phone');
             $table->integer('price');
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 

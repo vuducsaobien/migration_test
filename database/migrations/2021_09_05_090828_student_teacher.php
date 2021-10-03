@@ -20,12 +20,11 @@ class StudentTeacher extends Migration
 
             $table->unsignedBigInteger('student_id');
             $table->unsignedBigInteger('teacher_id');
-            $table->foreign('student_id')->references('id')->on('student')->onDelete('cascade');
-            $table->foreign('teacher_id')->references('id')->on('teacher')->onDelete('cascade');
+            $table->foreign('student_id')->references('id')->on('student')->onDelete('no action')->onUpdate('cascade');
+            $table->foreign('teacher_id')->references('id')->on('teacher')->onDelete('no action')->onUpdate('cascade');
 
             $table->integer('column_4');
-            $table->timestamps();
-
+            // $table->timestamps();
         });
 
     }
